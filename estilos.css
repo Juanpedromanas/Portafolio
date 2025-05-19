@@ -522,6 +522,10 @@ nav .fa-solid{
     .contacto-derecha, .contacto-izquierda{
         flex-basis: 100%;
     }
+
+    .trabajo{
+        max-width: 100%;
+    }
 }
 
 /*ampliación*/
