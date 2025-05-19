@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/023bc145b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="cerrarmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Bienvenidos</p>
+                <h1>¡Hola a todos!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobre-mi">
+        <div class="container">
+            <div class="row">
+                <div class="sobre-mi-columna1">
+                    <img src="img/Sobre-mi.gif">
+                </div>
+                <div class="sobre-mi-columna2">
+                    <h1 class="titulo-seccion">Sobre mi</h1>
+                    <p>Hola a todos! Mi nombre es Juan Pedro Mañas, tengo 27 años y soy diseñador digital. Mi gran desafío es poder alcanzar soluciones a través del diseño, que puedan ayudar a solucionar distintas problemáticas y/o transmitir un mensaje deseado.
+                        Además del diseño, también me apasiona mucho la fotografía, disfruto capturar momentos que transmitan un mensaje y puedan ser recordados y compartidos.</p>
+                    <div class="detalles-descripcion">
+                        <p class="tab-links link-activo" onclick="opentab('habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                    </div>
+                    <div class="contenidos-detalle detalle-activo" id="habilidades">
+                        <ul>
+                            <li><span>UX/UI</span><br>Diseño de interfaces web/app</li>
+                            <li><span>Paquete Adobe</span><br>Photoshop, Illustrator, Lightroom, Premiere Pro, After Effects</li>
+                            <li><span>Desarrollo web</span><br>HTML, CSS, Javascript, Sass, Wordpress, Git</li>
+                            <li><span>Otros</span><br>Office, Node JS</li>
+                        </ul>
+                    </div>
+
+                    <div class="contenidos-detalle" id="educacion">
+                        <ul>
+                            <li><span>Diseño digital</span><br>Universidad ORT</li>
+                            <li><span>Diseño gráfico</span><br>Universidad ORT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="servicios">
+        <div class="container">
+            <h1 class="titulo-seccion">Servicios</h1>
+            <div class="lista-servicios">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Diseño web</h2>
+                    <p>Diseñamos sitios web modernos, funcionales y adaptados a tus necesidades. Potencia tu presencia online con un diseño profesional, optimizado para todos los dispositivos y pensado para captar más clientes.</p>
+                    <a href="#contacto">Solicitar información</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UX/UI</h2>
+                    <p>Diseñamos experiencias digitales centradas en el usuario. Creamos interfaces intuitivas, atractivas y funcionales que mejoran la interacción con tu producto y aumentan la satisfacción de tus clientes desde el primer clic.</p>
+                    <a href="#contacto">Solicitar información</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Desarrollo web</h2>
+                    <p>Desarrollo de sitios y aplicaciones web a medida, eficientes y escalables. Utilizamos tecnologías modernas para garantizar rendimiento, seguridad y facilidad de mantenimiento, adaptándonos a los objetivos de tu negocio.</p>
+                    <a href="#contacto">Solicitar información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="trabajos">
+        <div class="container">
+            <h1 class="titulo-seccion">Trabajos</h1>
+            <div class="lista-trabajos">
+                <div class="trabajo" id="1">
+                    <img src="img/B14-Portada.gif" alt="">
+                    <div class="capa">
+                        <h3>Ecommerce B14</h3>
+                        <p>Venta online de remeras estampadas con temática NBA.</p>
+                        <a href="#" class="ver-proyecto" data-id="1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="trabajo" id="2">
+                    <img src="img/Cordon-Portada.gif" alt="">
+                    <div class="capa">
+                        <h3>Club Cordón</h3>
+                        <p>Sitio informativo para el club Cordón.</p>
+                        <a href="#" class="ver-proyecto" data-id="2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="trabajo" id="3">
+                    <img src="img/Smoothies-Portada.gif" alt="">
+                    <div class="capa">
+                        <h3>Tótem smoothies</h3>
+                        <p>Venta de smoothies frutales 100% autogestionada por usuarios</p>
+                        <a href="#" class="ver-proyecto" data-id="3"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="trabajo" id="4">
+                    <img src="img/APP-futbol-5-Portada.gif" alt="">
+                    <div class="capa">
+                        <h3>APP reserva fútbol 5</h3>
+                        <p>Se diseña APP con el objetivo de reservar un cupo para partidos de fútbol 5</p>
+                        <a href="#" class="ver-proyecto" data-id="4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="trabajo" id="5">
+                    <img src="img/Piterdesigns-Portada.gif" alt="">
+                    <div class="capa">
+                        <h3>Piterdesigns</h3>
+                        <p>Sitio web informativo, con acceso a redes sociales y contacto vía formulario.</p>
+                        <a href="#" class="ver-proyecto" data-id="5"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#" class="boton">Ver más</a>
+
+        </div>
+    </div>
+
+    <div id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="contacto-izquierda">
+                    <h1 class="titulo-seccion">Contacto</h1>
+                    <p><i class="fa-solid fa-envelope"></i> manasjuanpedro@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 099453885</p>
+                </div>
+                <div class="contacto-derecha">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Nombre" placeholder="Ingrese su nombre" required>
+                        <input type="email" name="Correo" placeholder="Ingrese su correo" required>
+                        <textarea name="Mensaje" rows="6" placeholder="Ingresar mensaje"></textarea>
+                        <button type="submit" class="boton2">Enviar</button>
+                    </form>
+                    <span id="mensaje"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="redes">
+            <a href="https://www.behance.net/piterdesigns"><i class="fa-brands fa-behance"></i></a>
+            <a href="https://www.instagram.com/piterdesigns/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <ul class="lista-footer">
+            <li>
+                <a href="#header">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#sobre-mi">Sobre mi</a>
+            </li>
+
+            <li>
+                <a href="#servicios">Servicios</a>
+            </li>
+
+            <li>
+                <a href="#trabajos">Trabajos</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <script src="codigo.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
